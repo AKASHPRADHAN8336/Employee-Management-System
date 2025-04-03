@@ -12,9 +12,20 @@
         <module name="config-server" />
         <module name="employee-service1" />
         <module name="service-registry1" />
-        <module name="User-Authentication" />
+      </profile>
+      <profile name="Annotation profile for organisation-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="organisation-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="User-Authentication" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -23,6 +34,7 @@
       <module name="config-server" options="-parameters" />
       <module name="department-service1" options="-parameters" />
       <module name="employee-service1" options="-parameters" />
+      <module name="organisation-service" options="-parameters" />
       <module name="service-registry1" options="-parameters" />
     </option>
   </component>
