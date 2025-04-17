@@ -1,17 +1,21 @@
 package com.example.organisationservice.entity;
 
-import jakarta.persistence.*;
+
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
-@Table(name = "Organisation")
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name = "organisation")
 public class Organisation {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

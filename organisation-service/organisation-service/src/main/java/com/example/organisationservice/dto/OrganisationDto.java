@@ -1,7 +1,6 @@
 package com.example.organisationservice.dto;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
